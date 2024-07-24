@@ -1,0 +1,200 @@
+/* CSS Reset */
+*{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman';
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+}
+.header{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.header::before,#contact::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+.logo{
+    margin: 10px 34px;
+}
+.logo img{
+    height: 55px;
+    width: 75px;
+    border-radius: 10px;
+}
+.navbar{
+    display: flex;
+    /* margin-left: 150px; */
+}
+.navbar li{
+    font-size: 20px;
+    list-style: none;
+}
+.navbar li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    margin: 10px 20px;
+}
+.navbar li a:hover{
+    color: black;
+    border-radius: 10px;
+    /* border-color: 15px solid red; */
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 3px 200px;
+    height: 410px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    /* background-color: grey; */
+}
+#home::before{
+    content: "";
+    background: url("HOME.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.82;   
+}
+h1{
+    margin-top: 75px;
+    padding: 12px 116px;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+.line1{
+    padding: 12px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+.line2{
+    padding: 12px 116px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0, 0.4);
+}
+#home button{
+    margin: 10px;
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+#home button:hover{
+    color: black;
+    background-color: white;
+}
+#services{
+    margin-top: 124px;
+}
+#services h1{
+    background-color: rgb(255, 165, 0, 0.3);
+    color: rgb(139, 34, 34);
+}
+#services div{
+    margin: 2px 1px;
+    display: flex;
+    flex-basis: 100%;
+}
+.box{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(139, 34, 34);
+    border-radius: 10px;
+    background-color: rgb(255, 165, 0, 0.1);
+}
+.box img{
+    margin: auto;
+    padding-bottom: 10px;
+    display: block;
+    height: 160px;
+}
+h2{
+    /* padding: 12px 116px; */
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+.box p{
+    margin-top: 4px;
+    text-align: justify;
+    color: black;
+}
+#client{
+    height: 281px;
+}
+#client::before{
+    content: "";
+    /* background-color: rgb(255, 165, 0, 0.1); */
+    background: url(CLIENT.jpg);
+    position: absolute;
+    height: 54%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.82; */
+}
+#client div{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#client h1{
+    margin-top: 6px;
+    /* color: rgb(243, 194, 96); */
+    background-color: rgba(117, 16, 16, 0.4);
+}
+.item img{
+    height: 100px;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    opacity: 0.1;
+    /* background-color: rgb(0, 0, 0, 0.4); */
+}
+#contact h1{
+    margin-top: 0px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    margin-top: 20px;
+}
+form{
+    width: 40%;
+}
+label{
+    color: black;
+    font-size: 1.3rem;
+}
+input,textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+footer div{
+    text-align: center;
+    background-color: rgb(19, 3, 3);
+    padding: 9px 20px;
+}
